@@ -77,10 +77,22 @@ class _HomeVcState extends State<HomeVc> {
             Navigator.pushNamed(context, '/date');
           },
         ),
-        RaisedButton(
+        RaisedButton( //Swiper
           child: Text("跳转第三方时间界面"),
           onPressed: () {
             Navigator.pushNamed(context, '/dateTwo');
+          },
+        ),
+        RaisedButton( //Swiper
+          child: Text("跳转轮播图"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/Swiper');
+          },
+        ),
+        RaisedButton( //Swiper
+          child: Text("跳转轮播图_01"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/SwiperOne');
           },
         ),
       ],

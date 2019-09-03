@@ -14,7 +14,8 @@ import '../pags/typs/RadiuList.dart';
 import '../pags/typs/InPut.dart';
 import '../pags/typs/Date.dart';
 import '../pags/typs/DateTwo.dart';
-
+import '../pags/typs/Swiper.dart';
+import '../pags/typs/SwiperOne.dart';
 /*
  * 配置路由
  */
@@ -33,6 +34,8 @@ final routes = {
   '/input':(context) => InputVc(),
   '/date':(context) => DateOne(),
   '/dateTwo':(context) => DateTwo(),
+  '/Swiper':(context) => SwiperVc(),
+  '/SwiperOne':(context) => SwiperOneVc(),
 };
 
 var onGenerateRoute = (RouteSettings settings) {

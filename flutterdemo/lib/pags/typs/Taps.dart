@@ -4,7 +4,6 @@ import 'Catecory.dart';
 import 'Setting.dart';
 import 'Home.dart';
 
-
 class Taps extends StatefulWidget {
   Taps({Key key}) : super(key: key);
   _TapsState createState() => _TapsState();
@@ -52,8 +51,7 @@ class _TapsState extends State<Taps> {
           },
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.search), title: Text('搜索')),
+            BottomNavigationBarItem(icon: Icon(Icons.search), title: Text('搜索')),
             BottomNavigationBarItem(icon: Icon(Icons.send), title: Text('分类')),
           ],
         ),
