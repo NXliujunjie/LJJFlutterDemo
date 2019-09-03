@@ -70,7 +70,19 @@ class _HomeVcState extends State<HomeVc> {
           onPressed: () {
             Navigator.pushNamed(context, '/input');
           },
-        )
+        ),
+        RaisedButton(
+          child: Text("跳转系统时间"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/date');
+          },
+        ),
+        RaisedButton(
+          child: Text("跳转第三方时间界面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/dateTwo');
+          },
+        ),
       ],
     );
   }

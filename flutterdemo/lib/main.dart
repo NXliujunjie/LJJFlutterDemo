@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'routes/Routes.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +11,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/',//初始化加载的路由
-      onGenerateRoute: onGenerateRoute
+      onGenerateRoute: onGenerateRoute,
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: [
+        const Locale('zh', 'CH'),
+        const Locale('en', 'US')
+      ],
     );
   }
 }

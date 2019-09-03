@@ -12,6 +12,9 @@ import '../pags/typs/ButtonVc.dart';
 import '../pags/typs/Radius.dart';
 import '../pags/typs/RadiuList.dart';
 import '../pags/typs/InPut.dart';
+import '../pags/typs/Date.dart';
+import '../pags/typs/DateTwo.dart';
+
 /*
  * 配置路由
  */
@@ -28,6 +31,8 @@ final routes = {
   '/Radius':(context) => RadiusVc(),
   '/RadiuList':(context) => RadiuList(),
   '/input':(context) => InputVc(),
+  '/date':(context) => DateOne(),
+  '/dateTwo':(context) => DateTwo(),
 };
 
 var onGenerateRoute = (RouteSettings settings) {
