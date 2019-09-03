@@ -9,6 +9,9 @@ import '../pags/appbar02.dart';
 import '../pags/typs/TabController.dart';
 import '../pags/typs/User.dart';
 import '../pags/typs/ButtonVc.dart';
+import '../pags/typs/Radius.dart';
+import '../pags/typs/RadiuList.dart';
+import '../pags/typs/InPut.dart';
 /*
  * 配置路由
  */
@@ -22,6 +25,9 @@ final routes = {
   '/TabController': (context) => TabbarController(),
   '/User':(context) => UserPage(),
   '/ButtonVc':(context) => ButtonVv(),
+  '/Radius':(context) => RadiusVc(),
+  '/RadiuList':(context) => RadiuList(),
+  '/input':(context) => InputVc(),
 };
 
 var onGenerateRoute = (RouteSettings settings) {

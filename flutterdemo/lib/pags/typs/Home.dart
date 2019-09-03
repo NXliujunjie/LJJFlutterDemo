@@ -52,6 +52,24 @@ class _HomeVcState extends State<HomeVc> {
           onPressed: () {
             Navigator.pushNamed(context, '/ButtonVc');
           },
+        ),
+        RaisedButton(
+          child: Text("跳转Radios界面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/Radius');
+          },
+        ),
+        RaisedButton(
+          child: Text("跳转RadiosList界面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/RadiuList');
+          },
+        ),
+        RaisedButton(
+          child: Text("跳转Input界面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/input');
+          },
         )
       ],
     );
