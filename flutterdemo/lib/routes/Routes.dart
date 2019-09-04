@@ -17,6 +17,10 @@ import '../pags/typs/DateTwo.dart';
 import '../pags/typs/Swiper.dart';
 import '../pags/typs/SwiperOne.dart';
 import '../pags/typs/DiaLogVc.dart';
+import '../pags/typs/Network.dart';
+import '../pags/typs/TextFieldVc.dart';
+import '../pags/typs/DioNetwork.dart';
+import '../pags/typs/RefeshVc.dart';
 /*
  * 配置路由
  */
@@ -38,6 +42,10 @@ final routes = {
   '/Swiper':(context) => SwiperVc(),
   '/SwiperOne':(context) => SwiperOneVc(),
   '/DiaLogVc':(context) => DiaLogVc(),
+  '/Network':(context) => NetworkVc(),
+  '/TextFieldVc':(context) => TextFieldVc(),
+  '/DioNetwork':(context) => Dionetwork(),
+  '/RefeshVc':(context) => RefreshVc(),
 };
 
 var onGenerateRoute = (RouteSettings settings) {

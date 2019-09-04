@@ -51,7 +51,7 @@ class _TapsState extends State<Taps> {
           },
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页')),
-            BottomNavigationBarItem(icon: Icon(Icons.search), title: Text('搜索')),
+            BottomNavigationBarItem(icon: Icon(Icons.search), title: Text('设置')),
             BottomNavigationBarItem(icon: Icon(Icons.send), title: Text('分类')),
           ],
         ),

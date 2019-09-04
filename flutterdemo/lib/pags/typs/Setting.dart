@@ -12,18 +12,36 @@ class Setting extends StatefulWidget {
 class _SettingState extends State<Setting> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-       child: Padding(
-         padding: EdgeInsets.all(20),
-          child: Column(
-            children: <Widget>[
-              TextFieldTool(),
-              TextFieldTwo(),
-              CheckBoxTool()
-            ],
-          ),
-       ),
+    return Column(
+      children: <Widget>[
+        RaisedButton(
+          //Swiper
+          child: Text("跳转textField+box"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/TextFieldVc');
+          },
+        ),
+        RaisedButton(
+          //Swiper
+          child: Text("跳转Network"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/Network');
+          },
+        ),
+        RaisedButton(
+          //Swiper
+          child: Text("跳转Dio"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/DioNetwork');
+          },
+        ),
+        RaisedButton(
+          child: Text("跳转下拉刷新"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/RefeshVc');
+          },
+        ),
+      ],
     );
   }
 }
-
