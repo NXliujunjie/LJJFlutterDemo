@@ -16,6 +16,7 @@ import '../pags/typs/Date.dart';
 import '../pags/typs/DateTwo.dart';
 import '../pags/typs/Swiper.dart';
 import '../pags/typs/SwiperOne.dart';
+import '../pags/typs/DiaLogVc.dart';
 /*
  * 配置路由
  */
@@ -36,6 +37,7 @@ final routes = {
   '/dateTwo':(context) => DateTwo(),
   '/Swiper':(context) => SwiperVc(),
   '/SwiperOne':(context) => SwiperOneVc(),
+  '/DiaLogVc':(context) => DiaLogVc(),
 };
 
 var onGenerateRoute = (RouteSettings settings) {

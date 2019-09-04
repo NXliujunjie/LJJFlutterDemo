@@ -95,6 +95,12 @@ class _HomeVcState extends State<HomeVc> {
             Navigator.pushNamed(context, '/SwiperOne');
           },
         ),
+        RaisedButton( //Swiper
+          child: Text("跳转DiaLog"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/DiaLogVc');
+          },
+        ),
       ],
     );
   }
