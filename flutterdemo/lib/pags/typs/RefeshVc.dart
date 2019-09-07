@@ -42,7 +42,7 @@ class _RefreshVcState extends State<RefreshVc> {
       _getData();
     });
   }
-  
+
   //上拉加载
   void _getData() async {
     if (this.falg == true) {
@@ -105,6 +105,12 @@ class _RefreshVcState extends State<RefreshVc> {
                       children: <Widget>[
                         ListTile(
                           title: Text(this.list[index]['title']),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/NewsContent',
+                                arguments: {
+                                  'aid': this.list[index]['aid'],
+                                });
+                          },
                         ),
                         Divider(),
                         _getMoreWidget(),
@@ -115,6 +121,12 @@ class _RefreshVcState extends State<RefreshVc> {
                       children: <Widget>[
                         ListTile(
                           title: Text(this.list[index]['title']),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/NewsContent',
+                                arguments: {
+                                  'aid': this.list[index]['aid'],
+                                });
+                          },
                         ),
                         Divider(),
                       ],

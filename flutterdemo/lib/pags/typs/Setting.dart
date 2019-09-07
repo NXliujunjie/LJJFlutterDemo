@@ -41,6 +41,13 @@ class _SettingState extends State<Setting> {
             Navigator.pushNamed(context, '/RefeshVc');
           },
         ),
+        //NewsContent
+         RaisedButton(
+          child: Text("跳转新闻详情"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/NewsContent');
+          },
+        ),
       ],
     );
   }
