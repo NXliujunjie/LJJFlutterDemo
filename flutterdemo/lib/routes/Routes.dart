@@ -22,6 +22,7 @@ import '../pags/typs/TextFieldVc.dart';
 import '../pags/typs/DioNetwork.dart';
 import '../pags/typs/RefeshVc.dart';
 import '../pags/typs/NewsContent.dart';
+import '../pags/typs/GetPhoneInfo.dart';
 /*
  * 配置路由
  */
@@ -48,6 +49,7 @@ final routes = {
   '/DioNetwork':(context) => Dionetwork(),
   '/RefeshVc':(context) => RefreshVc(),
   '/NewsContent':(context,{arguments}) => NewsContent(arguments:arguments),
+  '/GetPhoneInfo':(context) => GetPhoneInfo(),
 };
 
 var onGenerateRoute = (RouteSettings settings) {

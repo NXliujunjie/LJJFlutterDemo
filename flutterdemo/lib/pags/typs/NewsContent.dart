@@ -1,8 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
-import 'package:flutter_html/flutter_html.dart';
-import 'package:html/dom.dart' as dom;
+import 'package:flutter_inappbrowser/flutter_inappbrowser.dart';
 
 class NewsContent extends StatefulWidget {
   final Map arguments;
@@ -14,46 +13,20 @@ class NewsContent extends StatefulWidget {
 class _NewsContentState extends State<NewsContent> {
   Map arguments;
   _NewsContentState(this.arguments);
-  List _list = [];
-
-  @override
-  void initState() {
-    super.initState();
-    _getData();
-  }
-
-  void _getData() async {
-    var apiUrl =
-        'http://www.phonegap100.com/appapi.php?a=getPortalArticle&aid=${this.arguments['aid']}';
-    var response = await Dio().get(apiUrl);
-
-    setState(() {
-      this._list = json.decode(response.data)['result'];
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('新闻详情'),
+          title: Text('新闻详情111'),
         ),
-        body: ListView(
+        body: Column(
           children: <Widget>[
-            Text(this._list.length > 0 ? this._list[0]['title'] : ''),
-            Html(
-              data: """
-                    ${this._list.length > 0 ? this._list[0]['content'] : ''}
-                    """,
-              padding: EdgeInsets.all(8.0),
-              backgroundColor: Colors.white70,
-              defaultTextStyle: TextStyle(fontFamily: 'serif'),
-              linkStyle: const TextStyle(
-                color: Colors.redAccent,
+            Expanded(
+              child: InAppWebView(
+                initialUrl: 'http://www.phonegap100.com/newscontent.php?aid=198',
               ),
-              onLinkTap: (url) {
-              },
             )
           ],
         ),

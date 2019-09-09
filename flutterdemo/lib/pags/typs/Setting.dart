@@ -48,6 +48,13 @@ class _SettingState extends State<Setting> {
             Navigator.pushNamed(context, '/NewsContent');
           },
         ),
+        //'/GetPhoneInfo'
+          RaisedButton(
+          child: Text('获取设备信息'),
+          onPressed: () {
+            Navigator.pushNamed(context, '/GetPhoneInfo');
+          },
+        ),
       ],
     );
   }
